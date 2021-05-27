@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yoga NerP</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/style.css" type="text/css">
+
+</head>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu">
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="~/Content/img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <ul>
+                <li>CALL US:+91 9765587418 Amol Pote </li>
+                <li>7875562327 Ashish Sapdahare</li>
+                <li>9527528307 Sidhant Dabhekar</li>
+            </ul>
+            <a href="#" class="primary-btn">JOIN US</a>
+        </div>
+
+        <nav class="header__menu">
+            <ul class="mobile-menu">
+                <li class="active"><a href="~/Views/Shared/Layout.cshtml">Home</a></li>
+                <li><a href="./about-us.html">Yogasan</a></li>
+                <li><a href="./classes.html">Events</a></li>
+                <li>
+                    <a href="#">Member Registration</a>
+                    <ul class="dropdown">
+                        <li><a href="./classes-details.html">Classes Details</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./faq.html">Faq</a></li>
+                    </ul>
+                </li>
+                <li><a href="~/Views/Gallery/Index.cshtml">Gallery</a></li>
+                <li><a href="./contact.html">Feedback</a></li>
+                <li><a href="">Our Team</a></li>
+            </ul>
+        </nav>
+
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="~/Content/img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="header__top__widget">
+                            <ul>
+                                <li><b>CALL US: Amol Pote 9765587418</b></li>
+                                <li><b>Ashish Sapdahare 7875562327</b></li>
+                                <li><b>Sidhant Dabhekar 9527528307</b></li>
+                            </ul>
+                            <a href="#" class="primary-btn">JOIN US</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="~/Yoga/index">Yogasan</a></li>
+                                <li><a href="./classes.html">Events</a></li>
+                                <li>
+                                    <a href="#">Member Registration</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./classes-details.html">Classes Details</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><a href="./pricing.html">Pricing</a></li>
+                                        <li><a href="./faq.html">Faq</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="~/Gallery/Index">Gallery</a></li>
+                                <li><a href="./contact.html">Feedback</a></li>
+                                <li><a href="">Our Team</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+    @*<section class="hero">
+            <div class="hero__sliders owl-carousel">
+                <div class="hero__items set-bg" data-setbg="/Content/img/hero/hero-2.jpeg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="hero__text">
+                                    <span>Welcome to</span>
+                                    <h2>
+                                        Yoga Class NerPinglai
+                                    </h2>
+                                    <a href="#" class="primary-btn">DISCOVER MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="/Content/img/hero/hero-2.jpeg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="hero__text">
+                                    <span>Welcome to</span>
+                                    <h2>
+                                        Yoga Class NerPinglai
+                                    </h2>
+                                    <a href="#" class="primary-btn">DISCOVER MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+
+
+    @RenderBody()
+    <hr />
+    <footer>
+        <!-- Footer Section Begin -->
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__about">
+                            <img src="img/footer-logo.jpeg" alt="">
+                            <ul>
+                                <li><i class="fa fa-clock-o"></i> Mon - Sun: 5:30am - 07:30am</li>
+
+                            </ul>
+                            <form action="#" class="subscribe-form">
+                                <input type="text" placeholder="Your Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                        <div class="footer__widget">
+                            <h5>Inspiration</h5>
+                            <ul>
+                                <li><a href="#">Online Pilates</a></li>
+                                <li><a href="#">Yoga for Beginners</a></li>
+                                <li><a href="#">Online Pilates</a></li>
+                                <li><a href="#">Online Yoga</a></li>
+                                <li><a href="#">Conditioning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="footer__widget">
+                            <h5>About Us</h5>
+                            <ul>
+                                <li><a href="#">Our Vision</a></li>
+                                <li><a href="#">Our Mission</a></li>
+                                <li><a href="#">Meet The Team</a></li>
+                                <li><a href="#">Introduce</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer__widget">
+                            <h5>Contact Us</h5>
+                            <ul class="footer-address">
+                                <li><i class="fa fa-phone"></i>+91 9765587418 Amol Pote</li>
+                                <li><i class="fa fa-phone"></i>+91 7875562327 Ashish Sapdahare</li>
+                                <li><i class="fa fa-phone"></i>+91 9527528307 Sidhant Dabhekar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="footer__copyright__social">
+                                <a><i class="fa-copyright">Designed by ESankalp</i> </a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section End -->
+        <!-- Js Plugins -->
+        <script src="~/Content/js/jquery-3.3.1.min.js"></script>
+        <script src="~/Content/js/bootstrap.min.js"></script>
+        <script src="~/Content/js/jquery.nice-select.min.js"></script>
+        <script src="~/Content/js/jquery.barfiller.js"></script>
+        <script src="~/Content/js/jquery.slicknav.js"></script>
+        <script src="~/Content/js/owl.carousel.min.js"></script>
+        <script src="~/Content/js/main.js"></script>
+    </footer>
+
+
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @*@RenderSection("scripts", required: false)*@
+</body>
+</html>

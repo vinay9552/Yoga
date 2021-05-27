@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="YogaNerPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblAsan">
+          <Key>
+            <PropertyRef Name="AsanId" />
+          </Key>
+          <Property Name="AsanId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AsanName" Type="nvarchar" MaxLength="500" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Steps" Type="nvarchar" MaxLength="3000" />
+          <Property Name="Photo1" Type="nvarchar" MaxLength="200" />
+          <Property Name="Photo2" Type="nvarchar" MaxLength="200" />
+          <Property Name="Benefits" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Precaution" Type="nvarchar" MaxLength="2000" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="200" />
+          <Property Name="Category" Type="nvarchar" MaxLength="200" />
+          <Property Name="Type" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tblRegistration">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Photo" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Fatherhusbandname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Dateofbirth" Type="date" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Education" Type="nvarchar" MaxLength="500" />
+          <Property Name="Schoolnameifstudying" Type="nvarchar" MaxLength="500" />
+          <Property Name="Weight" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Height" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Occupation" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Mobilenumber" Type="nvarchar" MaxLength="12" />
+          <Property Name="Healthissueifanypleasespecify" Type="nvarchar" MaxLength="3000" />
+          <Property Name="Address" Type="nvarchar" MaxLength="3000" />
+          <Property Name="doyouknowaboutyogaifyespleasespecify" Type="nvarchar" MaxLength="3000" />
+        </EntityType>
+        <EntityContainer Name="YogaNerPModelStoreContainer">
+          <EntitySet Name="tblAsan" EntityType="Self.tblAsan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRegistration" EntityType="Self.tblRegistration" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="YogaNerPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblAsan">
+          <Key>
+            <PropertyRef Name="AsanId" />
+          </Key>
+          <Property Name="AsanId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AsanName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Steps" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+          <Property Name="Photo1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Photo2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Benefits" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Precaution" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="YogaNerPEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblAsans" EntityType="Self.tblAsan" />
+          <EntitySet Name="tblRegistrations" EntityType="YogaNerPModel.tblRegistration" />
+        </EntityContainer>
+        <EntityType Name="tblRegistration">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Photo" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Fatherhusbandname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Dateofbirth" Type="DateTime" Precision="0" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="Education" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Schoolnameifstudying" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Weight" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Height" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Occupation" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Mobilenumber" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="Healthissueifanypleasespecify" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+          <Property Name="doyouknowaboutyogaifyespleasespecify" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="YogaNerPModelStoreContainer" CdmEntityContainer="YogaNerPEntities">
+          <EntitySetMapping Name="tblAsans">
+            <EntityTypeMapping TypeName="YogaNerPModel.tblAsan">
+              <MappingFragment StoreEntitySet="tblAsan">
+                <ScalarProperty Name="AsanId" ColumnName="AsanId" />
+                <ScalarProperty Name="AsanName" ColumnName="AsanName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Steps" ColumnName="Steps" />
+                <ScalarProperty Name="Photo1" ColumnName="Photo1" />
+                <ScalarProperty Name="Photo2" ColumnName="Photo2" />
+                <ScalarProperty Name="Benefits" ColumnName="Benefits" />
+                <ScalarProperty Name="Precaution" ColumnName="Precaution" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRegistrations">
+            <EntityTypeMapping TypeName="YogaNerPModel.tblRegistration">
+              <MappingFragment StoreEntitySet="tblRegistration">
+                <ScalarProperty Name="doyouknowaboutyogaifyespleasespecify" ColumnName="doyouknowaboutyogaifyespleasespecify" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Healthissueifanypleasespecify" ColumnName="Healthissueifanypleasespecify" />
+                <ScalarProperty Name="Mobilenumber" ColumnName="Mobilenumber" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Schoolnameifstudying" ColumnName="Schoolnameifstudying" />
+                <ScalarProperty Name="Education" ColumnName="Education" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Dateofbirth" ColumnName="Dateofbirth" />
+                <ScalarProperty Name="Fatherhusbandname" ColumnName="Fatherhusbandname" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
